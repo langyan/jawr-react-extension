@@ -39,7 +39,7 @@ import org.mozilla.javascript.JavaScriptException;
 import org.mozilla.javascript.Scriptable;
 
 /**
- * This class defines the coffee script generator
+ * This class defines the react jsx generator
  * 
  * @author ibrahim Chaehoi
  */
@@ -47,16 +47,16 @@ public class ReactJsxGenerator extends AbstractJavascriptGenerator implements
 		ConfigurationAwareResourceGenerator,
 		PostInitializationAwareResourceGenerator, IReactJsxGenerator {
 
-	/** The coffee script prefix */
+	/** The react jsx prefix */
 	private static final String JSX_SCRIPT_PREFIX = "jsx";
 
-	/** The coffee script options property name */
+	/** The react jsx options property name */
 	private static final String JAWR_JS_GENERATOR_JSX_SCRIPT_OPTIONS = "jawr.js.generator.reactjsx.script.options";
 
-	/** The coffee script generator location */
+	/** The react jsx generator location */
 	private static final String JAWR_JS_GENERATOR_JSX_SCRIPT_LOCATION = "jawr.js.generator.reactjsx.script.location";
 
-	/** The default coffee script JS location */
+	/** The default react jsx JS location */
 	private static final String DEFAULT_JSX_SCRIPT_JS_LOCATION = "net/jawr/web/resource/bundle/generator/js/jsx/JSXTransformer.js";
 
 	/** The resolver */
@@ -65,7 +65,7 @@ public class ReactJsxGenerator extends AbstractJavascriptGenerator implements
 	/** The jawr config */
 	private JawrConfig config;
 
-	/** The coffee script options */
+	/** The react jsx options */
 	private String options;
 
 	/** The Rhino engine */
